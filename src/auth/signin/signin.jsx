@@ -31,7 +31,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { user } = await fetchQuery({
-      uri: "http://localhost:4000/users/login",
+      uri: "https://fine-pink-mite-toga.cyclic.app/users/login",
       method: "POST",
       body: { ...state },
     });

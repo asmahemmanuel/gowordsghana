@@ -32,7 +32,7 @@ const Signup = () => {
       password: user.password,
     };
     const data = await fetchQuery({
-      uri: "http://localhost:4000/users/signup",
+      uri: "https://fine-pink-mite-toga.cyclic.app/users/signup",
       method: "POST",
       body: newUser,
     });
