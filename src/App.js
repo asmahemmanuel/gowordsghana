@@ -11,7 +11,7 @@ import {useUserState} from "./state/store.js"
 function App() {
   const [word, setWord] = useState("");
   const [meanings, setMeanings] = useState([]);
-  const [category, setCategory] = useState("en");
+  const [category, setCategory] = useState("");
   const [LightMode, setLightMode] = useState(false);
   const logout = useUserState((state) => state.logOut)
 
@@ -78,7 +78,7 @@ function App() {
 
   useEffect(() => {
     dictionaryApi();
-  }, [word, category]);
+  }, []);
 
 
   
